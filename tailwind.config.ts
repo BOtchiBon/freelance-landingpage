@@ -71,7 +71,13 @@ export default {
 					'cyan': '#0EA5E9',
 					'cyan-soft': '#E0F2FE',
 					'sky': '#38BDF8',
-					'sky-soft': '#BAE6FD'
+					'sky-soft': '#BAE6FD',
+					'gray': '#6B7280',
+					'gray-light': '#F1F5F9',
+					'gray-dark': '#1E293B',
+					'lavender': '#D3E4FD',
+					'lavender-soft': '#F1F0FB',
+					'neutral': '#111827'
 				}
 			},
 			borderRadius: {
