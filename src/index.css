@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 252 80% 74%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 217.2 91.2% 59.8%;
+    --ring: 252 80% 74%;
 
     --radius: 0.75rem;
 
@@ -64,11 +64,11 @@
 
 @layer components {
   .hero-gradient {
-    @apply bg-gradient-to-br from-white via-freeness-lavender-soft to-freeness-gray-light;
+    @apply bg-gradient-to-br from-freeness-purple-soft via-white to-freeness-blue-soft;
   }
   
   .cta-gradient {
-    @apply bg-gradient-to-r from-freeness-blue to-freeness-sky;
+    @apply bg-gradient-to-r from-freeness-purple to-freeness-blue;
   }
   
   .section-padding {
@@ -77,9 +77,5 @@
   
   .hover-lift {
     @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
-  }
-
-  .glass-effect {
-    @apply backdrop-blur-sm bg-white/70 border border-white/20 shadow-sm;
   }
 }
