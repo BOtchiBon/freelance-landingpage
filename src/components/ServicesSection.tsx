@@ -6,38 +6,38 @@ const services = [
   {
     title: "Animation & Design",
     description: "Stunning visuals that capture attention and communicate your brand story effectively.",
-    icon: <PenTool className="h-8 w-8 text-freeness-purple" />,
-    bgClass: "bg-freeness-purple-soft/30",
+    icon: <PenTool className="h-8 w-8 text-freeness-blue" />,
+    bgClass: "bg-freeness-blue-soft/30",
   },
   {
     title: "eCommerce",
     description: "End-to-end online store development with seamless shopping experiences.",
-    icon: <ShoppingCart className="h-8 w-8 text-freeness-purple-dark" />,
-    bgClass: "bg-freeness-blue-soft/30",
+    icon: <ShoppingCart className="h-8 w-8 text-freeness-blue-dark" />,
+    bgClass: "bg-freeness-cyan-soft/30",
   },
   {
     title: "SEO & Marketing",
     description: "Data-driven strategies that boost visibility and drive qualified traffic.",
-    icon: <Search className="h-8 w-8 text-freeness-blue" />,
-    bgClass: "bg-freeness-peach-soft/30",
+    icon: <Search className="h-8 w-8 text-freeness-cyan" />,
+    bgClass: "bg-freeness-sky-soft/30",
   },
   {
     title: "Mobile Development",
     description: "Native and cross-platform apps that deliver exceptional user experiences.",
-    icon: <Smartphone className="h-8 w-8 text-freeness-purple" />,
-    bgClass: "bg-freeness-purple-soft/30",
+    icon: <Smartphone className="h-8 w-8 text-freeness-blue" />,
+    bgClass: "bg-freeness-blue-soft/30",
   },
   {
     title: "Web Development",
     description: "Custom websites and web applications built with modern technologies.",
-    icon: <Code className="h-8 w-8 text-freeness-purple-dark" />,
-    bgClass: "bg-freeness-blue-soft/30",
+    icon: <Code className="h-8 w-8 text-freeness-blue-dark" />,
+    bgClass: "bg-freeness-cyan-soft/30",
   },
   {
     title: "Data Analysis",
     description: "Transform raw data into actionable insights and business intelligence.",
-    icon: <BarChart className="h-8 w-8 text-freeness-blue" />,
-    bgClass: "bg-freeness-peach-soft/30",
+    icon: <BarChart className="h-8 w-8 text-freeness-cyan" />,
+    bgClass: "bg-freeness-sky-soft/30",
   },
 ];
 
@@ -46,7 +46,7 @@ export function ServicesSection() {
     <section id="services" className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-freeness-purple to-freeness-blue bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-freeness-blue to-freeness-cyan bg-clip-text text-transparent">
             Services That Drive Growth
           </h2>
           <p className="text-lg text-gray-700">

@@ -10,48 +10,48 @@ const recentJobs = [
     category: "Design",
     budget: "3000 TND",
     location: "Tunis",
-    bgClass: "bg-freeness-purple-soft/20",
-    textClass: "text-freeness-purple-dark",
+    bgClass: "bg-freeness-blue-soft/20",
+    textClass: "text-freeness-blue-dark",
   },
   {
     title: "WordPress Developer for E-commerce",
     category: "Web Development",
     budget: "2500 TND",
     location: "Sfax",
-    bgClass: "bg-freeness-blue-soft/20",
-    textClass: "text-freeness-blue",
+    bgClass: "bg-freeness-cyan-soft/20",
+    textClass: "text-freeness-cyan",
   },
   {
     title: "Social Media Marketing Specialist",
     category: "Marketing",
     budget: "1800 TND",
     location: "Sousse",
-    bgClass: "bg-freeness-orange-soft/20",
-    textClass: "text-orange-500",
+    bgClass: "bg-freeness-sky-soft/20",
+    textClass: "text-freeness-sky",
   },
   {
     title: "Mobile App Developer (React Native)",
     category: "Mobile Development",
     budget: "4000 TND",
     location: "Remote",
-    bgClass: "bg-freeness-purple-soft/20",
-    textClass: "text-freeness-purple-dark",
+    bgClass: "bg-freeness-blue-soft/20",
+    textClass: "text-freeness-blue-dark",
   },
   {
     title: "Content Writer for Tech Blog",
     category: "Writing",
     budget: "1500 TND",
     location: "Monastir",
-    bgClass: "bg-freeness-blue-soft/20",
-    textClass: "text-freeness-blue",
+    bgClass: "bg-freeness-cyan-soft/20",
+    textClass: "text-freeness-cyan",
   },
   {
     title: "Video Editor for YouTube Channel",
     category: "Video Production",
     budget: "2000 TND",
     location: "Bizerte",
-    bgClass: "bg-freeness-orange-soft/20",
-    textClass: "text-orange-500",
+    bgClass: "bg-freeness-sky-soft/20",
+    textClass: "text-freeness-sky",
   }
 ];
 
@@ -60,7 +60,7 @@ export function JobsSection() {
     <section id="jobs" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-freeness-purple to-freeness-blue bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-freeness-blue to-freeness-cyan bg-clip-text text-transparent">
             Recent Opportunities
           </h2>
           <p className="text-lg text-gray-700">
@@ -87,7 +87,7 @@ export function JobsSection() {
                     <span className="text-sm text-gray-600">{job.location}</span>
                   </div>
                   
-                  <Button variant="ghost" size="sm" className="text-freeness-purple hover:text-freeness-purple-dark hover:bg-freeness-purple-soft/10">
+                  <Button variant="ghost" size="sm" className="text-freeness-blue hover:text-freeness-blue-dark hover:bg-freeness-blue-soft/10">
                     <span className="mr-1">View</span>
                     <ArrowRight className="h-4 w-4" />
                   </Button>
@@ -98,7 +98,7 @@ export function JobsSection() {
         </div>
         
         <div className="mt-12 text-center">
-          <Button className="bg-freeness-purple hover:bg-freeness-purple-dark text-white px-8">
+          <Button className="bg-freeness-blue hover:bg-freeness-blue-dark text-white px-8">
             Browse All Jobs
           </Button>
         </div>
