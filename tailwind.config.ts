@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -73,6 +72,9 @@ export default {
 					'blue-sky': '#33C3F0',
 					'orange-soft': '#FEC6A1',
 					'peach-soft': '#FDE1D3',
+				},
+				fontFamily: {
+					'funnel': ['Funnel Display', 'sans-serif'],
 				}
 			},
 			borderRadius: {

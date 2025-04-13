@@ -10,7 +10,7 @@ export function CTASection() {
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-freeness-purple-dark via-freeness-purple to-freeness-blue bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-[#2563EB] to-[#4318FF] bg-clip-text text-transparent font-funnel">
             Get Started with Freeness Today
           </h2>
           

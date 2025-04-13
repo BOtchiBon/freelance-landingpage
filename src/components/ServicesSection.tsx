@@ -46,7 +46,7 @@ export function ServicesSection() {
     <section id="services" className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-freeness-purple to-freeness-blue bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#2563EB] to-[#4318FF] bg-clip-text text-transparent font-funnel">
             Services That Drive Growth
           </h2>
           <p className="text-lg text-gray-700">

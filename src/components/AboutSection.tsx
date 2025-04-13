@@ -25,7 +25,7 @@ export function AboutSection() {
           <div className="md:w-1/2 relative">
             <div className="absolute -top-10 -left-10 w-20 h-20 rounded-full bg-freeness-orange-soft/30 blur-md"></div>
             
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-freeness-purple to-freeness-blue-sky bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#2563EB] to-[#4318FF] bg-clip-text text-transparent font-funnel">
               Building a Thriving Digital Economy
             </h2>
             
