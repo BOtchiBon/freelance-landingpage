@@ -1,7 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,6 +23,10 @@ export function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -30,11 +35,9 @@ export function Navbar() {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <span className="text-xl font-bold bg-gradient-to-r from-freeness-purple to-freeness-blue bg-clip-text text-transparent">
-            freeness
-          </span>
+          <img src="/logo.png" alt="Freeness Logo" className="h-9 w-auto" />
         </a>
 
         {/* Desktop menu */}
@@ -57,13 +60,10 @@ export function Navbar() {
           >
             Jobs
           </a>
-          <Button
-            variant="ghost"
-            className="text-sm font-medium text-gray-700 hover:text-freeness-purple"
-          >
+          <button className="text-sm font-medium text-gray-700 hover:text-freeness-purple px-4 py-2 rounded-md hover:bg-gray-100">
             Login
-          </Button>
-          <Button className="bg-freeness-purple hover:bg-freeness-purple-dark text-white">
+          </button>
+          <Button className="bg-[#4318FF] hover:bg-[#2e0eb8] text-white">
             Get Started
           </Button>
         </div>
@@ -71,8 +71,7 @@ export function Navbar() {
         {/* Mobile menu button */}
         <div className="md:hidden">
           <Button
-            variant="ghost"
-            size="icon"
+            className="hover:bg-gray-100"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menu"
           >
@@ -107,7 +106,9 @@ export function Navbar() {
               Jobs
             </a>
             <div className="flex flex-col space-y-2">
-              <Button variant="ghost">Login</Button>
+              <button className="text-sm font-medium text-gray-700 hover:text-freeness-purple px-4 py-2 rounded-md hover:bg-gray-100">
+                Login
+              </button>
               <Button className="bg-freeness-purple hover:bg-freeness-purple-dark text-white">
                 Get Started
               </Button>

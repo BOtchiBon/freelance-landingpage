@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -52,7 +51,7 @@ const recentJobs = [
     location: "Bizerte",
     bgClass: "bg-freeness-orange-soft/20",
     textClass: "text-orange-500",
-  }
+  },
 ];
 
 export function JobsSection() {
@@ -60,11 +59,12 @@ export function JobsSection() {
     <section id="jobs" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-freeness-purple to-freeness-blue bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-freeness-purple to-freeness-blue bg-clip-text text-transparent font-funnel-display">
             Recent Opportunities
           </h2>
           <p className="text-lg text-gray-700">
-            Browse the latest projects from Tunisian businesses looking for talented freelancers like you.
+            Browse the latest projects from Tunisian businesses looking for
+            talented freelancers like you.
           </p>
         </div>
 
@@ -73,21 +73,34 @@ export function JobsSection() {
             <Card key={index} className="hover-lift border border-gray-100">
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <Badge variant="outline" className={`${job.bgClass} border-none ${job.textClass}`}>
+                  <Badge
+                    variant="outline"
+                    className={`${job.bgClass} border-none ${job.textClass}`}
+                  >
                     {job.category}
                   </Badge>
-                  <div className="text-sm font-semibold text-gray-900">{job.budget}</div>
+                  <div className="text-sm font-semibold text-gray-900">
+                    {job.budget}
+                  </div>
                 </div>
-                
-                <h3 className="text-lg font-semibold mb-4 text-gray-900">{job.title}</h3>
-                
+
+                <h3 className="text-lg font-semibold mb-4 text-gray-900">
+                  {job.title}
+                </h3>
+
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                    <span className="text-sm text-gray-600">{job.location}</span>
+                    <span className="text-sm text-gray-600">
+                      {job.location}
+                    </span>
                   </div>
-                  
-                  <Button variant="ghost" size="sm" className="text-freeness-purple hover:text-freeness-purple-dark hover:bg-freeness-purple-soft/10">
+
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-freeness-purple hover:text-freeness-purple-dark hover:bg-freeness-purple-soft/10"
+                  >
                     <span className="mr-1">View</span>
                     <ArrowRight className="h-4 w-4" />
                   </Button>
@@ -96,11 +109,11 @@ export function JobsSection() {
             </Card>
           ))}
         </div>
-        
+
         <div className="mt-12 text-center">
-          <Button className="bg-freeness-purple hover:bg-freeness-purple-dark text-white px-8">
+          <button className="bg-[#4318FF] hover:bg-[#2e0eb8] text-white px-8 py-3 rounded-md font-plus-jakarta text-base font-semibold transition-colors">
             Browse All Jobs
-          </Button>
+          </button>
         </div>
       </div>
     </section>
